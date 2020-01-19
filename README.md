@@ -1,1 +1,0 @@
-# graphql-angular-pg
