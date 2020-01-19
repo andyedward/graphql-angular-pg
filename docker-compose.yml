@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  backend:
+    container_name: backend
+    build: backend/.
+    ports:
+    - "3000:3000"
+    volumes:
+    - ./backend:/usr/src/app
+  frontend: 
+    container_name: frontend
+    build: frontend/.
+    ports:
+    - "4200:4200"
+    volumes:
+    - ./frontend:/usr/src/app
+  database:
+    image: postgres  
